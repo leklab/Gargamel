@@ -1,0 +1,16 @@
+{
+  "GargamelPipeline.inputSamplesFile": "samples.tsv",
+
+  "GargamelPipeline.clean_reads_py": "/gpfs/ycga/scratch60/ysm/lek/ml2529/forKaiyue/dev/Gargamel/scripts/clean_reads.py",
+  "GargamelPipeline.site_metrics_py": "/gpfs/ycga/scratch60/ysm/lek/ml2529/forKaiyue/dev/Gargamel/scripts/site_metrics.py",
+  "GargamelPipeline.count_wt_blocks_py": "/gpfs/ycga/scratch60/ysm/lek/ml2529/forKaiyue/dev/Gargamel/scripts/count_wt_blocks.py",
+
+  "GargamelPipeline.ref_fasta": "/gpfs/ycga/scratch60/ysm/lek/ml2529/forKaiyue/LARGE1_CDS.fasta",
+  "GargamelPipeline.ref_fasta_index": "/gpfs/ycga/scratch60/ysm/lek/ml2529/forKaiyue/LARGE1_CDS.fasta.fai",
+  "GargamelPipeline.ref_sa": "/gpfs/ycga/scratch60/ysm/lek/ml2529/forKaiyue/LARGE1_CDS.fasta.sa",
+  "GargamelPipeline.ref_amb": "/gpfs/ycga/scratch60/ysm/lek/ml2529/forKaiyue/LARGE1_CDS.fasta.amb",
+  "GargamelPipeline.ref_bwt": "/gpfs/ycga/scratch60/ysm/lek/ml2529/forKaiyue/LARGE1_CDS.fasta.bwt",
+  "GargamelPipeline.ref_ann": "/gpfs/ycga/scratch60/ysm/lek/ml2529/forKaiyue/LARGE1_CDS.fasta.ann",
+  "GargamelPipeline.ref_pac": "/gpfs/ycga/scratch60/ysm/lek/ml2529/forKaiyue/LARGE1_CDS.fasta.pac"
+  
+}

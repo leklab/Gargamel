@@ -6,6 +6,8 @@ workflow GargamelPipeline {
     File inputSamplesFile
 
     String clean_reads_py
+    String site_metrics_py
+    String count_wt_blocks_py
 
     File ref_fasta
     File ref_fasta_index
@@ -42,6 +44,23 @@ workflow GargamelPipeline {
         clean_reads_py = clean_reads_py
     }
 
+    call VariantCounts {
+      input:
+        sample_name = sample[0],
+        input_bam = CleanReads.output_bam,
+        input_bam_index = CleanReads.output_bam_index,
+        site_metrics_py = site_metrics_py,
+        start_block = sample[3],
+        end_block = sample[4]
+    }
+
+    call CountWTBlocks {
+      input:
+        sample_name = sample[0],
+        input_bam = CleanReads.output_bam,
+        input_bam_index = CleanReads.output_bam_index,
+        count_wt_blocks_py = count_wt_blocks_py
+    }
 
   }
 
@@ -49,6 +68,8 @@ workflow GargamelPipeline {
     Array[File] raw_bam_files = AlignReads.output_bam
     Array[File] bam_files = CleanReads.output_bam
     Array[File] bam_index = CleanReads.output_bam_index
+    Array[File] block_variant_counts = VariantCounts.block_variant_counts
+    Array[File] wt_block_counts = CountWTBlocks.wt_block_counts
 
   }
 
@@ -112,6 +133,52 @@ task CleanReads {
   output {
     File output_bam = "~{sample_name}.bam"
     File output_bam_index = "~{sample_name}.bam.bai"
+  }
+}
+
+task VariantCounts {
+  input {  
+    String sample_name
+    File input_bam
+    File input_bam_index
+    String site_metrics_py
+    String start_block
+    String end_block
+  }
+
+  command <<<
+    python ~{site_metrics_py} -i ~{input_bam} -c LARGE1_CDS -s ~{start_block} -e ~{end_block} -q 37 > ~{sample_name}_variant_counts.tsv
+  >>>
+
+  runtime {
+    cpus: 2
+    requested_memory: 24000
+  }
+
+  output {
+    File block_variant_counts = "~{sample_name}_variant_counts.tsv"
+  }
+}
+
+task CountWTBlocks {
+  input {  
+    String sample_name
+    File input_bam
+    File input_bam_index
+    String count_wt_blocks_py
+  }
+
+  command <<<
+    samtools sort -n -O SAM ~{input_bam} | python ~{count_wt_blocks_py} -i - -s ~{sample_name} > ~{sample_name}_wt_blocks.tsv
+  >>>
+
+  runtime {
+    cpus: 2
+    requested_memory: 16000
+  }
+
+  output {
+    File wt_block_counts = "~{sample_name}_wt_blocks.tsv"
   }
 }
 
