@@ -1,0 +1,4 @@
+*.out
+**/cromwell-workflow-logs
+**/cromwell-executions
+**/output

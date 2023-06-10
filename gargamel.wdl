@@ -3,6 +3,7 @@ version 1.0
 workflow GargamelPipeline {
 
   input {
+	String gene
     File inputSamplesFile
 
     String clean_reads_py
@@ -25,7 +26,7 @@ workflow GargamelPipeline {
   scatter (sample in inputSamples) {
     call AlignReads {
       input:
-        sample_name = sample[0],
+        sample_name = gene + '_' + sample[0],
         fastq1 = sample[1],
         fastq2 = sample[2],
         ref_amb = ref_amb,
@@ -46,7 +47,8 @@ workflow GargamelPipeline {
 
     call VariantCounts {
       input:
-        sample_name = sample[0],
+        sample_name = gene + '_' + sample[0],
+        gene = gene,
         input_bam = CleanReads.output_bam,
         input_bam_index = CleanReads.output_bam_index,
         site_metrics_py = site_metrics_py,
@@ -93,7 +95,7 @@ task AlignReads {
   }
 
   command <<<
-    bwa mem -M -t 8 -R "@RG\tID:large1\tPL:ILLUMINA\tSM:large1" ~{ref_fasta} \
+    bwa mem -M -t 8 -R "@RG\tID:~{sample_name}\tPL:ILLUMINA\tSM:~{sample_name}" ~{ref_fasta} \
     ~{fastq1} ~{fastq2} 2> >(tee ~{sample_name}.bwa.stderr.log >&2) \
     | samtools view -Sh1 -F 0x900 \
     | samtools sort -n - > ~{sample_name}_raw.bam
@@ -139,6 +141,7 @@ task CleanReads {
 task VariantCounts {
   input {  
     String sample_name
+	String gene
     File input_bam
     File input_bam_index
     String site_metrics_py
@@ -147,12 +150,12 @@ task VariantCounts {
   }
 
   command <<<
-    python ~{site_metrics_py} -i ~{input_bam} -c LARGE1_CDS -s ~{start_block} -e ~{end_block} -q 37 > ~{sample_name}_variant_counts.tsv
+    python ~{site_metrics_py} -i ~{input_bam} -c ~{gene} -s ~{start_block} -e ~{end_block} -q 37 > ~{sample_name}_variant_counts.tsv
   >>>
 
   runtime {
     cpus: 2
-    requested_memory: 24000
+    requested_memory: 32000
   }
 
   output {

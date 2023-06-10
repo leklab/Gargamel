@@ -7,6 +7,6 @@
 java -Dconfig.file=slurm.conf -jar \
 /gpfs/ycga/project/lek/shared/tools/jars/cromwell-56.jar run \
 gargamel.wdl \
--i gargamel.json \
+-i fkrp.json \
 -o cromwell.options
 

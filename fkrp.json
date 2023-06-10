@@ -1,5 +1,6 @@
 {
-  "GargamelPipeline.inputSamplesFile": "samples_test.tsv",
+  "GargamelPipeline.gene": "FKRP",
+  "GargamelPipeline.inputSamplesFile": "fkrp_samples.tsv",
 
   "GargamelPipeline.clean_reads_py": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/scripts/clean_reads.py",
   "GargamelPipeline.site_metrics_py": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/scripts/site_metrics.py",
