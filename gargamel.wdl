@@ -128,7 +128,7 @@ task CleanReads {
   >>>
 
   runtime {
-    cpus: 2
+    cpus: 1
     requested_memory: 8000
   }
 
@@ -154,8 +154,8 @@ task VariantCounts {
   >>>
 
   runtime {
-    cpus: 2
-    requested_memory: 32000
+    cpus: 1
+    requested_memory: 64000
   }
 
   output {
@@ -176,7 +176,7 @@ task CountWTBlocks {
   >>>
 
   runtime {
-    cpus: 2
+    cpus: 1
     requested_memory: 16000
   }
 

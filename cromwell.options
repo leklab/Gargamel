@@ -1,7 +1,7 @@
 {
-	"final_workflow_outputs_dir": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/output",
-	"final_workflow_log_dir": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/output",
-	"final_call_logs_dir": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/output",
+	"final_workflow_outputs_dir": "/home/ml2529/palmer_scratch/SMuRF/FKRP_1",
+	"final_workflow_log_dir": "/home/ml2529/palmer_scratch/SMuRF/FKRP_1",
+	"final_call_logs_dir": "/home/ml2529/palmer_scratch/SMuRF/FKRP_1",
 	"delete_intermediate_output_files": true,
 	"use_relative_output_paths": true
 }

@@ -1,0 +1,17 @@
+{
+  "GargamelPipeline.gene": "LARGE1",
+  "GargamelPipeline.inputSamplesFile": "large_samples.tsv",
+
+  "GargamelPipeline.clean_reads_py": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/scripts/clean_reads.py",
+  "GargamelPipeline.site_metrics_py": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/scripts/site_metrics.py",
+  "GargamelPipeline.count_wt_blocks_py": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/scripts/count_wt_blocks.py",
+
+  "GargamelPipeline.ref_fasta": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/reference_files/LARGE1_CDS.fasta",
+  "GargamelPipeline.ref_fasta_index": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/reference_files/LARGE1_CDS.fasta.fai",
+  "GargamelPipeline.ref_sa": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/reference_files/LARGE1_CDS.fasta.sa",
+  "GargamelPipeline.ref_amb": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/reference_files/LARGE1_CDS.fasta.amb",
+  "GargamelPipeline.ref_bwt": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/reference_files/LARGE1_CDS.fasta.bwt",
+  "GargamelPipeline.ref_ann": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/reference_files/LARGE1_CDS.fasta.ann",
+  "GargamelPipeline.ref_pac": "/home/ml2529/PCGC/monkol/fromKaiyue/Gargamel/reference_files/LARGE1_CDS.fasta.pac"
+  
+}

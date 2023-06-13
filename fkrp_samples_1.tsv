@@ -1,0 +1,12 @@
+high1	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R1.high1.fastq.gz	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R2.high1.fastq.gz	30	280
+low1	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R1.low1.fastq.gz	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R2.low1.fastq.gz	30	280
+high2	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R1.high2.fastq.gz	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R2.high2.fastq.gz	280	530
+low2	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R1.low2.fastq.gz	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R2.low2.fastq.gz	280	530
+high3	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R1.high3.fastq.gz	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R2.high3.fastq.gz	530	780
+low3	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R1.low3.fastq.gz	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R2.low3.fastq.gz	530	780
+high4	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R1.high4.fastq.gz	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R2.high4.fastq.gz	780	1030
+low4	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R1.low4.fastq.gz	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R2.low4.fastq.gz	780	1030
+high5	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R1.high5.fastq.gz	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R2.high5.fastq.gz	1030	1280
+low5	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R1.low5.fastq.gz	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R2.low5.fastq.gz	1030	1280
+high6	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R1.high6.fastq.gz	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R2.high6.fastq.gz	1280	1515
+low6	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R1.low6.fastq.gz	/home/ml2529/PCGC/monkol/fromKaiyue/data/FKRP_1/R2.low6.fastq.gz	1280	1515
