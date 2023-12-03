@@ -20,3 +20,25 @@ This workflow involves a 2-way extension PCR-based saturation mutagenesis and hi
 ```
 pysam (test ov v0.16.0.1)
 ```
+
+## Step 1: Loading required libraries
+Tested on McCleary cluster at Yale
+```
+module load Java/1.8.345
+module load Python/3.8.6-GCCcore-10.2.0
+module load SAMtools/1.16-GCCcore-10.2.0
+module load BWA/0.7.17-GCC-10.2.0
+module load Pysam/0.16.0.1-GCC-10.2.0
+```
+
+## Step 2: Preparation of input files
+
+* Change the output directory paths in the **cromwell.options** file
+* Change the paths in **large1.json** and **fkrp.json** to reference the absolute paths for the scripts and reference_files folders.
+* Change the input files to reference the demultiplexed FASTQ files and the block demarcations
+
+## Step 3: Submit the job to the Slurm job manager
+```
+sbatch launch_cromwell.sh
+```
+Output files will be located in the directory defined in the **cromwell.options** file
