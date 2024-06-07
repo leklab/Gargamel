@@ -3,7 +3,7 @@ version 1.0
 workflow GargamelPipeline {
 
   input {
-	String gene
+    String gene
     File inputSamplesFile
 
     String clean_reads_py
@@ -42,7 +42,8 @@ workflow GargamelPipeline {
       input:
         sample_name = sample[0],
         raw_bam = AlignReads.output_bam,
-        clean_reads_py = clean_reads_py
+        clean_reads_py = clean_reads_py,
+        overlap_len = sample[5]
     }
 
     call VariantCounts {
@@ -117,10 +118,11 @@ task CleanReads {
     File raw_bam
     String clean_reads_py
     String sample_name
+    String overlap_len
   }
 
   command <<<
-    python ~{clean_reads_py} -l 26 -i ~{raw_bam} -o - \
+    python ~{clean_reads_py} -l ~{overlap_len} -i ~{raw_bam} -o - \
     | samtools view -Sh1 - \
     | samtools sort - > ~{sample_name}.bam
 
@@ -141,7 +143,7 @@ task CleanReads {
 task VariantCounts {
   input {  
     String sample_name
-	String gene
+    String gene
     File input_bam
     File input_bam_index
     String site_metrics_py
