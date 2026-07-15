@@ -16,7 +16,7 @@ Scripts used for the original SMuRF workflow are organized across three reposito
 
 An additional sister study applies the SMuRF workflow to the **SGCA** gene:
 
-* The [**Denisa repository**](https://github.com/leklab/denisa) contains all scripts and resources relevant to the SGCA study, including data processing, membrane localization generation, confidence classification, variant annotation, and downstream analyses.
+* The [**Denisa repository**](https://github.com/leklab/denisa) contains all scripts and resources relevant to the SGCA study, including data processing, membrane localization score generation, confidence classification, variant annotation, and downstream analyses.
 
 ## Requirements
 
