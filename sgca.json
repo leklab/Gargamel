@@ -1,0 +1,16 @@
+{
+  "GargamelPipeline.gene": "SGCA",
+  "GargamelPipeline.inputSamplesFile": "/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca_samples.tsv",
+
+  "GargamelPipeline.clean_reads_py": "/vast/palmer/scratch/brueckner/kn396/Gargamel/scripts/clean_reads.py",
+  "GargamelPipeline.site_metrics_py": "/vast/palmer/scratch/brueckner/kn396/Gargamel/scripts/site_metrics.py",
+  "GargamelPipeline.count_wt_blocks_py": "/vast/palmer/scratch/brueckner/kn396/Gargamel/scripts/count_wt_blocks.py",
+
+  "GargamelPipeline.ref_fasta": "/vast/palmer/scratch/brueckner/kn396/Gargamel/reference_files/SGCA.fa",
+  "GargamelPipeline.ref_fasta_index": "/vast/palmer/scratch/brueckner/kn396/Gargamel/reference_files/SGCA.fa.fai",
+  "GargamelPipeline.ref_sa": "/vast/palmer/scratch/brueckner/kn396/Gargamel/reference_files/SGCA.fa.sa",
+  "GargamelPipeline.ref_amb": "/vast/palmer/scratch/brueckner/kn396/Gargamel/reference_files/SGCA.fa.amb",
+  "GargamelPipeline.ref_bwt": "/vast/palmer/scratch/brueckner/kn396/Gargamel/reference_files/SGCA.fa.bwt",
+  "GargamelPipeline.ref_ann": "/vast/palmer/scratch/brueckner/kn396/Gargamel/reference_files/SGCA.fa.ann",
+  "GargamelPipeline.ref_pac": "/vast/palmer/scratch/brueckner/kn396/Gargamel/reference_files/SGCA.fa.pac"
+}

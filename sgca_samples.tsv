@@ -1,0 +1,10 @@
+blk1_high	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R1.blk1_high.fastq.gz	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R2.blk1_high.fastq.gz	206	447	14
+blk1_low	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R1.blk1_low.fastq.gz	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R2.blk1_low.fastq.gz	206	447	13
+blk2_high	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R1.blk2_high.fastq.gz	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R2.blk2_high.fastq.gz	447	686	16
+blk2_low	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R1.blk2_low.fastq.gz	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R2.blk2_low.fastq.gz	447	686	15
+blk3_high	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R1.blk3_high.fastq.gz	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R2.blk3_high.fastq.gz	686	925	16
+blk3_low	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R1.blk3_low.fastq.gz	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R2.blk3_low.fastq.gz	686	925	15
+blk4_high	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R1.blk4_high.fastq.gz	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R2.blk4_high.fastq.gz	925	1164	16
+blk4_low	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R1.blk4_low.fastq.gz	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R2.blk4_low.fastq.gz	925	1164	15
+blk5_high	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R1.blk5_high.fastq.gz	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R2.blk5_high.fastq.gz	1164	1403	16
+blk5_low	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R1.blk5_low.fastq.gz	/vast/palmer/scratch/brueckner/kn396/Gargamel/sgca/SGCA_3/R2.blk5_low.fastq.gz	1164	1403	15
